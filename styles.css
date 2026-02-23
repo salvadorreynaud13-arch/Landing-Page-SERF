@@ -670,6 +670,13 @@ footer {
 
 /* --- Responsive --- */
 @media (max-width: 991px) {
+    .container {
+        padding: 0 1.25rem;
+        width: 100%;
+        max-width: 100vw;
+        overflow-x: hidden;
+    }
+
     .hero h1 {
         font-size: 3rem;
     }
@@ -690,25 +697,28 @@ footer {
     }
 
     /* Centrar botones y correo en la sección del fundador en móvil */
-    .contact-links-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-    }
-
+    .contact-links-container,
     .contact-links-container div {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
         justify-content: center !important;
-        width: 100%;
+        text-align: center !important;
+        width: 100% !important;
     }
 
     .tech-grid {
         grid-template-columns: 1fr;
     }
 
-    .container {
-        padding: 0 1.5rem;
+    .glass-card,
+    .service-card,
+    .tech-category,
+    .cta-box {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: calc(100vw - 2.5rem);
     }
 }
 
@@ -752,6 +762,7 @@ footer {
 
     .hero-btns {
         flex-direction: column;
+        align-items: center;
     }
 
     .logo-grid {
@@ -765,7 +776,8 @@ footer {
     }
 
     .cta-box {
-        padding: 3rem 1.5rem;
+        padding: 2.5rem 1rem;
+        box-sizing: border-box;
     }
 
     .section-padding {
@@ -774,5 +786,12 @@ footer {
 
     .tech-grid {
         grid-template-columns: 1fr;
+    }
+
+    .contact-form,
+    .form-group input,
+    .form-group textarea {
+        width: 100% !important;
+        box-sizing: border-box !important;
     }
 }
