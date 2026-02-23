@@ -676,22 +676,31 @@ footer {
 
     .founder {
         grid-template-columns: 1fr;
-        gap: 3rem;
+        gap: 2rem;
         text-align: center;
     }
 
+    .founder h2 {
+        font-size: 2.2rem;
+    }
+
+    .founder-img {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
     /* Centrar botones y correo en la sección del fundador en móvil */
-    .founder-info .contact-links-container {
+    .contact-links-container {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        text-align: center;
+        width: 100%;
     }
 
-    .founder-info .contact-links-container div,
-    .founder-info .contact-links-container a {
-        justify-content: center;
+    .contact-links-container div {
+        justify-content: center !important;
+        width: 100%;
     }
 
     .tech-grid {
@@ -731,8 +740,14 @@ footer {
         display: none;
     }
 
+    .hero {
+        padding-top: 120px;
+        padding-bottom: 60px;
+    }
+
     .hero h1 {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
+        line-height: 1.1;
     }
 
     .hero-btns {
@@ -746,7 +761,15 @@ footer {
     }
 
     .cta-final h2 {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
+    }
+
+    .cta-box {
+        padding: 3rem 1.5rem;
+    }
+
+    .section-padding {
+        padding: 60px 0;
     }
 
     .tech-grid {
