@@ -49,6 +49,8 @@ body {
     font-family: var(--font-body);
     line-height: 1.6;
     overflow-x: hidden;
+    /* Evita el scroll horizontal */
+    width: 100%;
 }
 
 h1,
@@ -674,18 +676,22 @@ footer {
         text-align: center;
     }
 
-    .founder-img {
-        max-width: 400px;
-        margin: 0 auto;
+    /* Centrar botones y correo en la sección del fundador en móvil */
+    .founder-info .contact-links-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
     }
 
-    .footer-content {
-        flex-direction: column;
-        gap: 3rem;
+    .founder-info .contact-links-container div,
+    .founder-info .contact-links-container a {
+        justify-content: center;
     }
 
     .tech-grid {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
     }
 }
 
