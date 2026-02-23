@@ -39,6 +39,14 @@
     box-sizing: border-box;
 }
 
+html,
+body {
+    overflow-x: hidden !important;
+    width: 100% !important;
+    position: relative;
+    max-width: 100vw;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -692,6 +700,15 @@ footer {
 
     .tech-grid {
         grid-template-columns: 1fr;
+    }
+
+    .container {
+        padding: 0 1.5rem !important;
+        overflow-x: hidden !important;
+    }
+
+    section {
+        overflow-x: hidden !important;
     }
 }
 
