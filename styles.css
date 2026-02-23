@@ -41,8 +41,9 @@
 
 html,
 body {
-    overflow-x: hidden;
     width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 html {
@@ -698,7 +699,7 @@ footer {
     }
 
     .container {
-        padding: 0 1.5rem !important;
+        padding: 0 1.5rem;
     }
 }
 
