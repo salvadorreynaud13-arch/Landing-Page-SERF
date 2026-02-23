@@ -786,6 +786,26 @@ footer {
 
     .tech-grid {
         grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .tech-icons {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 0.6rem !important;
+    }
+
+    .tech-tag {
+        padding: 0.5rem 0.75rem !important;
+        font-size: 0.75rem !important;
+        gap: 0.5rem !important;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .tech-tag img {
+        width: 18px !important;
+        height: 18px !important;
     }
 
     .contact-form,
